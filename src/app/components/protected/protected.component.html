@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item>
+    <h1>Protected route</h1>
+  </ion-item>
+
+  <ion-item *ngIf="authService.getUser()">
+    Welcome {{authService.getUser().name}}
+  </ion-item>
+
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item>
+    Longitude: {{ longitude }}
+  </ion-item>
+  <ion-item>
+    Latitude: {{ latitude }}
+  </ion-item>
+
+  <ion-item>
+  <ion-button (click)="setCoordinates($event)" size="block" type="submit" color="primary">Afficher ma position</ion-button>
+
+  </ion-item>
+
+</ion-content>

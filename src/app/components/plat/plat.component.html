@@ -1,0 +1,26 @@
+<ion-card>
+
+  <ion-card-header>
+    {{ plat.nom | uppercase }}
+  </ion-card-header>
+  <ion-item>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <label for="">Quantite</label>
+          <ion-input readonly type="text">{{ plat.quantite }}</ion-input>
+        </ion-col>
+        <ion-col col-6>
+          <ion-button (click)="incQte()" expand="block" color="secondary">Plus</ion-button>
+          <ion-button (click)="decQte()" expand="block" color="secondary">Moins</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-item>
+  
+  <ion-button (click)="commander()" class="btnCommander" color="primary">Commander</ion-button>
+
+
+</ion-card>

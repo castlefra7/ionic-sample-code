@@ -1,0 +1,13 @@
+{
+  "appId": "mg.operateur",
+  "appName": "ionici_features_demo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2
+    }
+  },
+  "cordova": {}
+}

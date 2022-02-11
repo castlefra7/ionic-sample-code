@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionici_features_demo</string>
+    <string name="title_activity_main">ionici_features_demo</string>
+    <string name="package_name">mg.operateur</string>
+    <string name="custom_url_scheme">mg.operateur</string>
+</resources>

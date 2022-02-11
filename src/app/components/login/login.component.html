@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <form *ngIf="!authService.getUser()" [formGroup]="myForm" (ngSubmit)="onLogin()">
+    <ion-item>
+      <ion-label for="name" fixed>Username</ion-label>
+      <ion-input id="name" placeholder='name' [formControl]="myForm.controls['user']"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label for="pwd" fixed>Password</ion-label>
+      <ion-input id="pwd" placeholder='password' [formControl]="myForm.controls['pwd']" ></ion-input>
+    </ion-item>
+    <ion-button size="block" type="submit" color="primary">Se connecter</ion-button>
+
+  </form>
+
+  <form *ngIf="authService.getUser()" (ngSubmit)="onLogout()" >
+    <ion-button size="block" type="submit" color="primary">Se déconnecter</ion-button>
+
+  </form>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionici_features_demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-item>
+    <h1>Menu du jour</h1>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-button (click)="listePlatsCommander()">Show</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let plat of plats">
+      <ion-col col-12>
+        <app-plat [plat]="plat"></app-plat>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

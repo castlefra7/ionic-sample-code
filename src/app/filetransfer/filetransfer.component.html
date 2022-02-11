@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-content>
+    <form [formGroup]="file" (ngSubmit)="chooseFile()">
+      <ion-item>
+        <ion-label>File Name</ion-label>
+        <ion-input type="text" formControlName="filePath"></ion-input>
+      </ion-item>
+      <ion-button type="submit">Submit</ion-button>
+    </form>
+  </ion-content>
+  <!-- <ion-router-outlet></ion-router-outlet> -->
+</ion-content>
