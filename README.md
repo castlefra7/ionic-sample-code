@@ -21,7 +21,7 @@ Sample code for Ionic - Angular
 - A protected route
 ![Protected_route](/images/protected_route.jpg)
 - A photo gallery with button to take pictures
-Exa![Photo](/images/photo.jpg)
+![Photo](/images/photo.jpg)
 - A file upload screen connected to a file upload server
 ![File_upload](/images/file_upload.jpg)
 - A geolocation
