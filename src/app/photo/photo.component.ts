@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { kill } from 'process';
 import { PhotoService } from './services/photo.service';
 
 @Component({

@@ -24,7 +24,8 @@ const routes: Routes = [
   },
   {
     path: 'picture',
-    component: PictureComponent
+    // component: PictureComponent
+    loadChildren: () => import('../photo/photo.module').then(m => m.PhotoModule)
   },
   {
     path: 'menu/:id',
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'localisation',
     component: LocalisationComponent
+  },
+  {
+    path: 'filetransfer',
+    loadChildren: () => import('../filetransfer/filetransfer.module').then( m => m.FiletransferModule)
   }
 ];
 

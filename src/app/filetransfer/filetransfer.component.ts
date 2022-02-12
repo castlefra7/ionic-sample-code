@@ -28,12 +28,11 @@ export class FiletransferComponent implements OnInit {
 
   upload(uri) {
     const fileTransfer: FileTransferObject = this.transfer.create();
-
     // const fileTransfer: FileTransferObject = this.transfer.create();
 
     let options: FileUploadOptions = {
       fileKey: 'file_to_upload',
-      fileName: 'name.jpg',
+      fileName: `${uri.split("/").slice(-1)}.jpg`,
       mimeType: "image/jpeg",
     };
     
@@ -60,11 +59,9 @@ export class FiletransferComponent implements OnInit {
     
     this.fileChooser.open()
       .then(uri => {
-        console.log("---ato---------------------------------");
-        console.log(uri);
         this.upload(uri);
       })
-      .catch(e => console.log(e));
+      .catch(e => this.presentAlert("erreur", JSON.stringify(e)));
   }
 
 }

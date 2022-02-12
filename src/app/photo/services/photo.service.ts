@@ -41,6 +41,7 @@ export class PhotoService {
     const savedImageFile = await this.savePicture(capturedPhoto);
     this.photos.unshift(savedImageFile);
 
+
     Storage.set({
       key: this.PHOTO_STORAGE,
       value: JSON.stringify(this.photos)

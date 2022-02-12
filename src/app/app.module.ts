@@ -15,7 +15,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { FileChooser } from '@ionic-native/file-chooser';
+// import { FileChooser } from '@ionic-native/file-chooser';
 
 
 // export const firebaseConfig = {
