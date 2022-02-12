@@ -10,11 +10,19 @@ Sample code for Ionic - Angular
     - when Android studio is openning and you modify the source code
 
 ## User Interfaces
-- ![Navigation](/images/navigation.jpg)
-- ![Menu](/images/menu.jpg)
-- ![Login](/images/login.jpg)
-- ![Logout](/images/logout.jpg)
-- ![Protected_route](/images/protected_route.jpg)
-- ![Photo](/images/photo.jpg)
-- ![File_upload](/images/file_upload.jpg)
-- ![Geolocation](/images/geolocation.jpg)
+- A left side navigation
+![Navigation](/images/navigation.jpg)
+- An example of a restaurant's menu
+![Menu](/images/menu.jpg)
+- A login screen
+![Login](/images/login.jpg)
+- A logout button
+![Logout](/images/logout.jpg)
+- A protected route
+![Protected_route](/images/protected_route.jpg)
+- A photo gallery with button to take pictures
+Exa![Photo](/images/photo.jpg)
+- A file upload screen connected to a file upload server
+![File_upload](/images/file_upload.jpg)
+- A geolocation
+![Geolocation](/images/geolocation.jpg)
